@@ -27,6 +27,8 @@ jobs:
       - run: npm run build
         env:
           VITE_BASE_PATH: /daily_money_status/
+          VITE_SUPABASE_URL: https://mbkhsvpcouzygotvwlba.supabase.co
+          VITE_SUPABASE_PUBLISHABLE_KEY: sb_publishable_S1JJcmKvcsXMUWjZP-aN9g_fOOfc-qr
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
